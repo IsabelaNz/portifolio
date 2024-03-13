@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #F2F2F0;
+    --cor-tericiaria: #F72798;
+    --cor-hover: #456173;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria); 
+    color: var(--cor-secundaria);
+}
+
+.titulo-destaque{
+    color: var(--cor-tericiaria) ;
+}
+
+.cabecalho {
+    padding: 2% 0 0 15%;
+
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho-menu-link {
+    font-family:var(--fonte-secundaria) ;
+    font-size:  1.5em; 
+    font-weight: 600;
+    color: var(--cor-tericiaria);
+    text-decoration: none;
+}
+
+.img {
+    width: 200px; 
+    max-width: 400px;
+    height: auto; 
+    border-radius: 10px;
+    margin-top: -50vh;
+}
+
+.apresentacao{
+    margin: 5% 15%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao-conteudo{
+    width: 615px;
+    display: flex ;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.apresentacao-titulo{
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao-paragrafo{
+    font-size: 1.5rem;
+    font-family:var(--fonte-secundaria);
+}
+
+.apresentacao-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao-links-subtitulo{
+    font-family:var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresentacao-links1e2{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-tericiaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.7rem;
+    padding: 20px 0;
+    text-decoration: none; /*/ tira espaço abaixo do link /*/
+    color: var(--cor-secundaria);
+    font-family:var(--fonte-secundaria) ;
+    font-weight: bold;
+}
+
+.apresentacao-links1e2:hover {
+    background-color: var(--cor-hover);
+}
+
+.rodape {
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-tericiaria);
+    text-align: center;
+    font-family:var(--fonte-secundaria) ;
+    font-size:1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width:1200px) {
+    .cabecalho {
+        padding: 8%;
+    }
+    .cabecalho-menu {
+        justify-content:center ;
+    }
+    .img{
+        margin-top: -10%;
+    }
+    .apresentacao {
+        justify-content: center;
+        flex-direction: column-reverse;
+       padding: 5%;
+       font-size:5vw ;
+    }
+    .apresentacao-conteudo {
+        width:auto;
+        font-size: 5vw;
+    }
+    .apresentacao-links1e2 {
+        width: 90%;
+    }
+    .rodape {
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
